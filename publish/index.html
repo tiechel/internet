@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>インターネットへようこそ</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-size: 16px;
+      background: rgb(205, 233, 205);
+      background-image: linear-gradient(90deg, #fff 1px, transparent 0), linear-gradient(#fff 1px, transparent 0);
+      background-size: 15px 15px;
+    }
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: lightcyan;
+      -webkit-text-stroke: 1px blue;
+    }
+    .container {
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .container-fluid {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .text-red {
+      color: red;
+    }
+    .counter-number {
+      font-size: 2rem;
+      padding: 2px;
+      background-color: black;
+      color: chartreuse;
+      font-family: 'Segoe UI Black';
+    }
+    .banner {
+      height: 30px;
+      width: 100%;
+      background-color: orange;
+      overflow: hidden;
+    }
+    .banner-content {
+      display: inline-block;
+      /* color: #fff; */
+      line-height: 30px;
+      padding-left: 100%;
+      white-space: nowrap;
+      animation: animate-banner 20s linear infinite;
+    }
+    @keyframes animate-banner {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .menu-table {
+      width: 80%;
+    }
+    .menu-table td {
+      width: 50%;
+      font-size: 2rem;
+      text-align: left;
+    }
+    .menu-item {
+      position: relative;
+      padding-left: 35px;
+    }
+  
+    .menu-item:before {
+      content: "";
+      position: absolute;
+      top: .45em;
+      left: 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 15px;
+      height: 15px;
+      border-top: 5px solid #8b6b4e;
+      border-right: 5px solid #8b6b4e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="title" style="font-size: 3rem; font-weight: bold;">インターネットの部屋</span>
+  </div>
+
+  <div class="container">
+    <div class="counter">
+      <span class="counter-number">0</span>
+      <span class="counter-number">0</span>
+      <span class="counter-number">0</span>
+      <span class="counter-number">0</span>
+      <span class="counter-number">1</span>
+      <span class="counter-number">3</span>
+      <p>
+        人目のお客様です。 <span class="text-red">キリ番踏み逃げ厳禁！</span>
+      </p>
+      </p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="banner">
+      <div class="banner-content">
+        いらっしゃいませ！ここはインターネットのページです。
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <table class="menu-table" style="max-width: 800px; margin: 0 auto;">
+      <tbody>
+        <tr>
+          <td>
+            <span class="menu-item"><a href="#">PROFILE</a></span>
+          </td>
+          <td>
+            <span class="menu-item"><a href="#">INTERNET ROOM</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="menu-item"><a href="#">BBS</a></span>
+          </td>
+          <td>
+            <span class="menu-item"><a href="#">DIALY</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="menu-item"><a href="#">CHAT</a></span>
+          </td>
+          <td>
+            <span class="menu-item"><a href="#">LINK</a></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
